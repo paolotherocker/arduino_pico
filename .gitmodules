@@ -1,0 +1,3 @@
+[submodule "libraries/arduino-timer"]
+	path = libraries/arduino-timer
+	url = git@github.com:contrem/arduino-timer.git
