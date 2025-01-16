@@ -31,11 +31,23 @@ arduino-cli core install rp2040:rp2040
 Compile:
 
 ```bash
-arduino-cli compile -b arduino:rp2040:rp2040 Blink/Blink.ino
+arduino-cli compile -b rp2040:rp2040:rpipico Blink/Blink.ino
 ```
 
-Upload
+After connecting the board for the first time, with the BOOTSEL button pressed:
 
 ```bash
-arduino-cli upload /home/user/Arduino/MySketch -p /dev/ttyACM0 -b arduino:avr:uno
+arduino-cli upload Blink/Blink.ino -p UF2_Board -b rp2040:rp2040:rpipico
+```
+
+Check the new name of the port by doing
+
+```bash
+arduino-cli board list
+```
+
+It should now be something like this:
+
+```bash
+arduino-cli upload Blink/Blink.ino -p /dev/cu.usbmodem4301 -b rp2040:rp2040:rpipico
 ```
