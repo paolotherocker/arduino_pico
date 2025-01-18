@@ -1,3 +1,6 @@
 [submodule "libraries/arduino-timer"]
 	path = libraries/arduino-timer
 	url = git@github.com:contrem/arduino-timer.git
+[submodule "libraries/TM1637"]
+	path = libraries/TM1637
+	url = git@github.com:avishorp/TM1637.git
